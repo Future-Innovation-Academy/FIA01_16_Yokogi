@@ -1,0 +1,318 @@
+/* ここから下に記載していく */
+.logo{
+    float: left;
+}
+
+.top{
+    float:right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.header{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.mainbg{
+    width: 100%;
+}
+
+.container {overflow: hidden;} /* はみ出す部分を見えなくする */
+:root {
+  --numOfListA: 5; /* リストAのimgタグの数 */
+  --imgW: 140px; /* ここで画像の横幅を指定、px指定を推奨 */
+  --imgH: var(--imgW); /* ここで画像の縦幅を指定、px指定を推奨 */
+  --mBetweenImg: 50px; /* ここで画像間の余白を指定。px指定を推奨 */
+}
+.slider-container {
+  display: flex; /* 画像を横並びにする */
+  font-size: 0; /* 余計な余白を削除 */
+  animation: slideshow 15s linear infinite;
+}
+.slider-img {
+  width: var(--imgW);
+  height:  var(--imgH);
+}
+.slider-img + .slider-img {margin-left: var(--mBetweenImg);}
+@keyframes slideshow {100% {transform: translateX(calc((var(--numOfListA) * var(--imgW) + var(--mBetweenImg) * var(--numOfListA)) * -1));}} /* 下で説明 */
+
+.wrap_course{
+    text-align: center;
+}
+
+.wrap_about{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.wrap_news{
+    text-align: center;  
+    clear: left;
+    clear: right;
+}
+
+.wrap_access{
+    text-align: center;  
+    background-color:#fafafa;
+}
+
+.wrap_contact{
+    text-align: center;  
+}
+
+.about {
+    color:gold;
+    font-weight: bold;
+}
+
+.about1{
+    margin-top: 30px;
+}
+
+.about2{
+    margin-top: 60px;
+}
+
+.about3{
+    margin-top: 40px;
+    line-height: 25px
+}
+
+.about4{
+    margin-top: 40px;
+}
+
+.about5{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    line-height: 25px
+}
+
+.course{
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.course_sentence{
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+.news_button{
+    text-align: center;  
+}
+
+.news_button:hover{
+    transform: scale(1.1, 1.1)
+}
+
+.course_parent{
+    display: grid;
+    grid-template-columns:3fr 3fr;
+    grid-template-rows:4fr 4fr;
+}
+
+.course_img01{
+    grid-column:1/2;       
+    grid-row:1/2; 
+}
+
+.course_detail01{
+    background-color:#fafafa;
+    grid-column:2/3;       
+    grid-row:1/2; 
+}
+
+.course_img02{
+    grid-column:2/3;       
+    grid-row:2/3; 
+}
+
+.course_detail02{
+    background-color:#fafafa;
+    grid-column:1/2;       
+    grid-row:2/3; 
+}
+
+.course_img03{
+    grid-column:1/2;       
+    grid-row:3/4; 
+}
+
+.course_detail03{
+    background-color:#fafafa;
+    grid-column:2/3;       
+    grid-row:3/4; 
+}
+
+.course01{
+    margin-top: 120px;
+}
+
+.course02{
+    margin-top: 120px;
+}
+
+.course03{
+    margin-top: 120px;
+}
+
+.c01-1{
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.c01-2{
+    margin-bottom: 10px;
+}
+
+.c01-3{
+    margin-bottom: 10px;
+}
+
+.c01-4{
+    margin-bottom: 10px;
+}
+
+.c01-5{
+    margin-bottom: 10px;
+}
+
+.news {
+    color:gold;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.news_title{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.news_contents{
+    display: inline-block;
+}
+
+.news_contents:hover{
+    transform: scale(1.1, 1.1)
+}
+
+.access{
+    font-weight: bold;
+}
+
+.contact{
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.contact1{
+    margin-bottom: 60px;
+}
+
+.contact2{
+    margin-bottom: 10px;
+}
+
+.contact3{
+    margin-bottom: 30px;
+}
+
+.contact4{
+    margin-bottom: 10px;
+}
+
+.contact5{
+    margin-bottom: 70px;
+}
+
+form{
+    max-width: 700px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    font-size: 10px;
+    }
+    
+    .item{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    }
+    
+    .label{
+    width: 180px;
+    padding-left: 10px;
+    border-left: solid 5px #a0522d;
+    }
+    
+    input[type="text"],input[type="email"]{
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    }
+    
+    select{
+    appearance: none;
+    cursor: pointer;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    }
+    
+    textarea{
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    height: 160px;
+    width: 480px;
+    font-size: 15px;
+    }
+    
+    .btn{
+    text-align: center;
+    margin: 25px auto;
+    margin-bottom: 140px;
+    }
+
+    .btn:hover{
+        transform: scale(1.1, 1.1)
+    }
+    
+    button{
+    background: #ff6347;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 25px;
+    }
+
+    .footer{
+        background: #666666	;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        position: relative;
+    }
+
+    .copyright{
+        position: absolute; 
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto; 
+        width: 700px;
+        height: 10px; 
+    }
+
+    .table{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
