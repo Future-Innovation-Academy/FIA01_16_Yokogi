@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.flower {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.level {
+  text-align: center;
+  font-size: 30px;
+  color:blue;
+}
